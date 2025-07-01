@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+
+<body> 
+    
+    
+    <main>
+        <img id="gif" src="./assets/Coins Sticker by ApplyBoard.gif" alt="logo">
+            <label>Converter <b>De:</b>
+                <select id="select-a-converter">
+                        <option value="BRL">R$ Real Brasileiro</option>
+                        <option value="USD">US$ Dólar Americano</option>
+                        <option value="EUR">€ Euro</option>
+                        <option value="CNY">CN¥ Yuan Chinês</option>
+                        <option value="JPY">JP¥ Iene Japonês</option>
+                        <option value="ARS">ARS Peso Argentino</option>
+                        <option value="GBP">£ Libra</option>
+                        <option value="BTC">₿ Bitcoin</option>
+                </select>
+            </label>
+
+            <label>Converter <b>Para:</b>
+                <select id="select-convertido">
+                        <option value="BRL">R$ Real Brasileiro</option>
+                        <option selected value="USD">US$ Dólar Americano</option>
+                        <option value="EUR">€ Euro</option>
+                        <option value="CNY">CN¥ Yuan Chinês</option>
+                        <option value="JPY">JP¥ Iene Japonês</option>
+                        <option value="ARS">ARS Peso Argentino</option>
+                        <option value="GBP">£ Libra</option>
+                        <option value="BTC">₿ Bitcoin</option>
+                </select>
+            </label>
+
+            <button id="botao-trocar">⇄</button>
+
+            <label>
+                Valor:
+                <input autocomplete="off" id="input-valor" placeholder="R$ 10.000,00 ">
+            </label>
+
+            <button class="botao-converter">Converter</button>
+
+            <section>
+                <div class="currency-box">
+                    <img class="icone-moeda" id="icone-moeda-a-converter" src="./assets/brasil.png" alt="real">
+                    <p class="nome-moeda-a-converter">Real Brasileiro</p>
+                    <p class="valor-a-converter">R$ 0,00</p>
+                </div>
+                <img id="flecha" src="./assets/flecha.png" alt="flecha">
+                <div class="currency-box">
+                    <img class="icone-moeda" id="icone-moeda-convertida" src="./assets/estados-unidos.png" alt="dolar">
+                    <p class="nome-moeda-convertida">Dólar Americano</p>
+                    <p class="valor-convertido">US$ 0,00</p>
+                </div>
+            </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

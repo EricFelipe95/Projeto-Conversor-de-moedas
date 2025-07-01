@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+body {
+  background-image: url(./assets/background-moedas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icone-moeda {
+  width: 40px;
+  
+}
+
+#gif {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+main {
+  background-color: #f4f4f4;
+  width: 350px;
+  height: 690px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 15px;
+  color: #777777;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #555555;
+  border: 1px solid #bbbbbb;
+  margin-bottom: 15px;
+  padding-left: 12px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+select:hover {
+    opacity: 0.8;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #555555;
+  border: 1px solid #bbbbbb;
+  margin-bottom: 23px;
+  padding-left: 12px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+  color: #b4b4b4;
+}
+
+#botao-trocar {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #9c9b9baf;
+    width: 25px;
+    height: 25px;
+    color: #555555;
+    background-color: rgb(224, 212, 193);
+    margin-left: 143px;
+  
+    
+}
+
+.botao-converter {
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: rgb(224, 212, 193);
+    color: #555555;
+    border: 2px solid #9c9b9baf;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 3px solid rgb(224, 212, 193);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.currency-box {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 3px;
+     font-weight: 700;
+     font-size: 15px;
+     color: #505050;
+     
+
+}
+
+#flecha{
+    margin: 18px 0;
+    width: 30px;
+    height: 50px;
+}
+
+.nome-moeda {
+    font-size: 10px;
+    font-weight: 500;
+    color: #7a7a7a;
+}
+
+@media (max-width: 500px) {
+
+body {
+    background-image: none !important;
+    background-color: #f4f4f4;
+    background-blend-mode:normal;
+
+}
+
+main {
+    background-color: #dbdbdb;
+
+}
+
+#gif {
+    width: 80px;
+
+}
+
+section {
+    border: 3px solid rgb(172, 172, 172);
+
+}
+
+.botao-converter, input, select {
+    font-size: 14px;
+    height: 35px
+  }
+
+  .currency-box {
+    font-size: 13px
+  }
+
+  #botao-trocar {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+  }
+
+}
+
+  
+  
+
+
+
+
+
+
